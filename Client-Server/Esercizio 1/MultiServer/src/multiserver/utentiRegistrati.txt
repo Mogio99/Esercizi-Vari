@@ -1,0 +1,2 @@
+nome;pw;admin
+name;pass;user
