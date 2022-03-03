@@ -1,0 +1,44 @@
+<html>
+    <head>
+        <title>Pippo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form name='uno' method='post' action='/mogioni/EsercizioQuadro'>
+            <input type='hidden' name='function' value='ElencoQuadri'>
+            <input type='submit' value='Mostra l’elenco dei quadri' name='invia'>  
+        </form>
+        
+        <form name='due' method='post' action='/mogioni/EsercizioQuadro'>
+             <input type="text" name="codice" placeholder="codice"> 
+             <input type="text" name="titolo" placeholder="titolo"> 
+             <input type="text" name="autore" placeholder="autore"> 
+             <input type="text" name="correnteartistica" placeholder="corrente artistica"> 
+             <input type="text" name="altezza" placeholder="altezza"> 
+             <input type="text" name="larghezza" placeholder="larghezza"> 
+             <input type="text" name="datacreazione" placeholder="data creazione"> 
+             <input type="text" name="descrizione" placeholder="descrizione"> 
+            <input type='hidden' name='function' value='NewQuadro'>
+            <input type='submit' value='Inserire un nuovo quadro' name='invia'>  
+        </form>
+        
+        <form name='tre' method='post' action='/mogioni/EsercizioQuadro'>
+            <input type="text" name="titolo"> 
+            <input type='hidden' name='function' value='FindQuandro'>
+            <input type='submit' value='Cercare uno/più quadri per Titolo' name='invia'>  
+        </form>
+        
+        <form name='quattro' method='post' action='/mogioni/EsercizioQuadro'>
+            <input type='hidden' name='function' value='ViewQuadro'>
+            <input type='submit' value='Mostrare l’elenco dei quadri ordinati per DataCreazione' name='invia'>  
+        </form>
+        
+        <form name='cinque' method='post' action='/mogioni/EsercizioQuadro'>
+            <input type='hidden' name='function' value='A4'>
+            <input type='submit' value='Mostrare tutti quelli stampabili su un foglio A4' name='invia'>  
+        </form>
+        
+    </body>
+</html>

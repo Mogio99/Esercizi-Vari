@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>Pippo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <form name='uno' method='post' action='/mogioni/Eventi'>
+            <input type='hidden' name='function' value='query1'>
+            <input type='submit' value='Mostrare il calendario di Roma' name='invia'>  
+        </form>
+        
+        <form name='due' method='post' action='/mogioni/Eventi'> 
+            <input type="text" name="testo1"> 
+            <input type="text" name="testo2"> 
+            <input type='hidden' name='function' value='query2'>
+            <input type='submit' value='Mostrare gli eventi svolti in un dato periodo' name='invia'>  
+        </form>
+        
+        <form name='tre' method='post' action='/mogioni/Eventi'>
+            <input type="text" name="filtrocitta"> 
+            <input type="text" name="filtrodata"> 
+            <input type="text" name="filtropart"> 
+            <input type='hidden' name='function' value='query3'>
+            <input type='submit' value='Filtro avanzato' name='invia'>  
+        </form>
+        
+        <form name='quattro' method='post' action='/mogioni/Eventi'>
+            <input type="text" name="testo3">
+            <input type='hidden' name='function' value='query4'>
+            <input type='submit' value='Mostrare il totale degli introiti di un certo anno' name='invia'>  
+        </form>
+    
+    </body>
+</html>
